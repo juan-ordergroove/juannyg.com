@@ -1,4 +1,5 @@
 *.pyc
+.gitignore
 settings.py
 wsgi.py
-#*.bak
+*.bak
