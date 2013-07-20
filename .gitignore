@@ -3,3 +3,4 @@
 settings.py
 wsgi.py
 *.bak
+*.swp
