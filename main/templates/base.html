@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>JuannyG.com</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -23,9 +23,20 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        {% block body %}
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        {% block logo %}
+        <div class=fix_header>
+    	    <div class=header>
+	            <img src='{% static "main/img/rainbow.jpg" %}' height='75px' />
+	            <img src='{% static "main/img/logo.png" %}' class=logo />
+            </div>
+        </div>
         {% endblock %}
+       
+        <div class=body>
+        {% block body %}
+            <p>Hello world! This is HTML5 Boilerplate.</p>
+        {% endblock %}
+        </div>
         <script src="{% static "main/js/plugins.js" %}"></script>
         <script src="{% static "main/js/main.js" %}"></script>
     </body>
