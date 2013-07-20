@@ -23,19 +23,33 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        {% block logo %}
-        <div class=fix_header>
-    	    <div class=header>
-	            <img src='{% static "main/img/rainbow.jpg" %}' height='75px' />
-	            <img src='{% static "main/img/logo.png" %}' class=logo />
+        <div class=container>
+            {% block logo %}
+            <div class=fix_header>
+    	        <div class=header>
+	                <div class=rainbow_div>
+                        <img src='{% static "main/img/rainbow.jpg" %}' height='75px' />
+                    </div>
+                    <div class=logo_div>
+	                    <img src='{% static "main/img/logo.png" %}' height='75px' class=logo />
+                    </div>
+                    <div class=navbar>
+                        <span><a href="#">Programming</a></span> | 
+                        <span><a href="#">Cooking</a></span> |
+                        <span><a href="#">Music</a></span> |
+                        <span><a href="#">Photos</a></span> |
+                        <span><a href="#">Links</a></span> |
+                        <span><a href="#">About Me</a></span>
+                    </div>
+                </div>
             </div>
-        </div>
-        {% endblock %}
+            {% endblock %}
        
-        <div class=body>
-        {% block body %}
-            <p>Hello world! This is HTML5 Boilerplate.</p>
-        {% endblock %}
+            <div class=body>
+            {% block body %}
+                <p>Hello world! This is HTML5 Boilerplate.</p>
+            {% endblock %}
+            </div>
         </div>
         <script src="{% static "main/js/plugins.js" %}"></script>
         <script src="{% static "main/js/main.js" %}"></script>
