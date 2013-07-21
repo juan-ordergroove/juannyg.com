@@ -2,14 +2,10 @@
     text-align:center;
 }
 
-.idx-main {
-    padding: 25px 100px;
-}
-
 .idx-boxes {
     margin:auto;
-    padding-top:50px;
-    width:80%;
+    padding:50px;
+    width:68%;
 }
 
 .idx-tbox {
