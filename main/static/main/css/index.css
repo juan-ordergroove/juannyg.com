@@ -3,8 +3,7 @@
 }
 
 .idx-left, .idx-right {
-    height:580px;
-    padding-top:25px;
+    padding: 25px 0;
 }
 
 .idx-left {
@@ -13,7 +12,6 @@
 }
 
 .idx-right {
-    height:580px;
 }
 
 .idx-boxes {
@@ -25,11 +23,9 @@
 .idx-tbox {
     padding: 10px;
     font-family:Modern;
-    font-style:italic;
     height:380px;
-    border: 1px solid #000;
     border-radius: 75px;
-    background-color: #F0EDFF;
+    background-color: #B1BFF1;
     font-size:15px;
 }
 
@@ -47,7 +43,9 @@
 
 .idx-sub-welcome {
     font-size:20px;
+    font-style:italic;
     font-weight:normal;
+    padding-top:10px;
 }
 
 .idx-welcome-txt {
