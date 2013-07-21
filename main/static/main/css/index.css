@@ -2,37 +2,30 @@
     text-align:center;
 }
 
-.idx-left, .idx-right {
-    padding: 25px 0;
-}
-
-.idx-left {
-    float:left;
-    width:75%;
-}
-
-.idx-right {
+.idx-main {
+    padding: 25px 100px;
 }
 
 .idx-boxes {
-    width:75%;
     margin:auto;
     padding-top:50px;
+    width:80%;
 }
 
 .idx-tbox {
-    padding: 10px;
+    padding: 10px 10px 25px 10px;
     font-family:Modern;
-    height:380px;
     border-radius: 75px;
     background-color: #B1BFF1;
     font-size:15px;
+    min-height:160px;
 }
 
 .idx-welcome {
     text-align:center;
-    font-size:32px;
+    font-size:24px;
     font-weight:bold;
+    font-style:italic;
 }
 
 .idx-txt-box {
@@ -52,5 +45,10 @@
     padding-top:20px;
     font-style:normal;
     font-size:18px;
-    text-align:left;
+    text-align:center;
+}
+
+.idx-signature {
+    font-style:italic;
+    font-size:18px;
 }
