@@ -21,7 +21,6 @@
     text-align:center;
     font-size:24px;
     font-weight:bold;
-    font-style:italic;
 }
 
 .idx-txt-box {
@@ -30,14 +29,7 @@
     padding-right:25px;
 }
 
-.idx-sub-welcome {
-    font-size:20px;
-    font-style:italic;
-    font-weight:normal;
-    padding-top:10px;
-}
-
-.idx-welcome-txt {
+.idx-motd {
     padding-top:20px;
     font-style:normal;
     font-size:18px;
@@ -47,4 +39,5 @@
 .idx-signature {
     font-style:italic;
     font-size:18px;
+    padding-top:20px;
 }
