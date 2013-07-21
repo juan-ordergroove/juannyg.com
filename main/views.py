@@ -5,7 +5,8 @@ from django.template import Context, loader
 from main.models import MOTD
 
 def index(request):
-    motd = MOTD.objects.get()
+    try: motd = MOTD.objects.get()
+    except: motd = ''
 
     template = loader.get_template('main/index.html')
     context = Context({"motd": motd})
