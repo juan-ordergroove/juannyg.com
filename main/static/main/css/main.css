@@ -75,9 +75,6 @@ textarea {
 }
 
 .fix_header {
-    position: fixed;
-    z-index: 2;
-    top: 0px;
     width: 980px;
     height: 110px;
     line-height: 45px;
@@ -86,6 +83,7 @@ textarea {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5CC1F1',endColorstr='#0045C0');
     background: -webkit-gradient(linear,left top,left bottom,from(#5CC1F1),to(#0045C0));
     background: -moz-linear-gradient(top,#5CC1F1,#0045C0);
+    border-bottom: 1px solid white;
 }
 
 .header {
@@ -108,11 +106,7 @@ textarea {
     float:left;
 }
 
-.body {
-    padding-top:110px;
-}
-
-
+.clear { clear:both; }
 
 
 

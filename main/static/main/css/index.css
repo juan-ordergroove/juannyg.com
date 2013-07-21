@@ -1,0 +1,58 @@
+.idx-body {
+    text-align:center;
+}
+
+.idx-left, .idx-right {
+    height:580px;
+    padding-top:25px;
+}
+
+.idx-left {
+    float:left;
+    width:75%;
+}
+
+.idx-right {
+    height:580px;
+}
+
+.idx-boxes {
+    width:75%;
+    margin:auto;
+    padding-top:50px;
+}
+
+.idx-tbox {
+    padding: 10px;
+    font-family:Modern;
+    font-style:italic;
+    height:380px;
+    border: 1px solid #000;
+    border-radius: 75px;
+    background-color: #F0EDFF;
+    font-size:15px;
+}
+
+.idx-welcome {
+    text-align:center;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.idx-txt-box {
+    padding-left:25px;
+    padding-top:10px;
+    padding-right:25px;
+}
+
+.idx-sub-welcome {
+    font-size:20px;
+    font-weight:normal;
+}
+
+.idx-welcome-txt {
+    padding-top:20px;
+    font-style:normal;
+    font-size:18px;
+    text-align:left;
+}

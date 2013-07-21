@@ -1,10 +1,19 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 
+{% block css %}
+<link rel="stylesheet" href="{% static "main/css/index.css" %}" />
+{% endblock %}
+
 {% block body %}
-<div style="text-align:center; padding-top:10px">
-    <span>We are currently undergoing some construction. Please check back soon.</span>
-    <br/>
-    <span><img src="{% static "main/img/counter.gif" %}" /></span>
+<div class=idx-body>
+    {% include "main/index_left.html" %}
+    {% include "main/index_right.html" %}
+    <div class=clear></div>
+    <div>
+        <span>We are currently undergoing some construction. Please check back soon.</span>
+        <br/>
+        <span><img src="{% static "main/img/counter.gif" %}" /></span>
+    </div>
 </div>
 {% endblock %}
