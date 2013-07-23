@@ -30,8 +30,16 @@
             {% endblock %}
        
             <div class=body>
-            {% block body %}
-            {% endblock %}
+                <div class=left_body>
+                    {% block left %}{% endblock %}
+                </div>
+                <div class=right_body>
+                    {% block right %}{% endblock %}
+                </div>
+                <div class=clear></div>
+                <div class=center>
+                    <span><img src="{% static "main/img/counter.gif" %}" /></span>
+                </div>
             </div>
         </div>
         <script src="{% static "main/js/plugins.js" %}"></script>

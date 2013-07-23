@@ -5,11 +5,5 @@
 <link rel="stylesheet" href="{% static "main/css/index.css" %}" />
 {% endblock %}
 
-{% block body %}
-<div class=idx-body>
-    {% include "main/index_main.html" %}
-    <div>
-        <span><img src="{% static "main/img/counter.gif" %}" /></span>
-    </div>
-</div>
-{% endblock %}
+{% block left %}{% include "main/index/left.html" %}{% endblock %}
+{% block right %}{% include "main/index/right.html" %}{% endblock %}

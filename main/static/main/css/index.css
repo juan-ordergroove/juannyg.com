@@ -1,32 +1,40 @@
-.idx-body {
-    text-align:center;
+.left_body .idx-boxes {
+    padding:50px;
+    width:80%;
+}
+
+.right_body .idx-boxes {
+    width:92%;
+    padding-top:50px;
 }
 
 .idx-boxes {
     margin:auto;
-    padding:50px;
-    width:68%;
 }
 
 .idx-tbox {
-    padding: 10px 10px 25px 10px;
-    font-family:Modern;
-    border-radius: 75px;
+    padding: 0px 0px 15px 0px;
+    border-radius: 10px;
     background-color: #B1BFF1;
     font-size:15px;
     min-height:160px;
+}
+
+.right_body .idx-tbox{
+    min-height:0;
 }
 
 .idx-welcome {
     text-align:center;
     font-size:24px;
     font-weight:bold;
+    padding-top:10px;
 }
 
 .idx-txt-box {
-    padding-left:25px;
+    padding-left:15px;
     padding-top:10px;
-    padding-right:25px;
+    padding-right:15px;
 }
 
 .idx-motd {
@@ -40,4 +48,14 @@
     font-style:italic;
     font-size:18px;
     padding-top:20px;
+    float:right;
+}
+
+.idx-about {
+    font-weight:bold;
+    font-size: 15px;
+}
+
+.idx-about-details {
+    text-align:justify;
 }

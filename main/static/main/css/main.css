@@ -84,6 +84,8 @@ textarea {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5CC1F1',endColorstr='#0045C0');
     background: -webkit-gradient(linear,left top,left bottom,from(#5CC1F1),to(#0045C0));
     background: -moz-linear-gradient(top,#5CC1F1,#0045C0);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .header {
@@ -106,8 +108,22 @@ textarea {
     float:left;
 }
 
-.clear { clear:both; }
+.left_body, .right_body {
+    padding-top:25px;
+}
 
+.left_body {
+    float:left;
+    width:75%;
+}
+
+.right_body {
+    float:right;
+    width:25%;
+}
+
+.clear { clear:both; }
+.center { text-align:center; }
 
 
 
