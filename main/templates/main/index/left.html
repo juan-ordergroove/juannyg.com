@@ -3,23 +3,16 @@
             <div class=idx-txt-box>
                 <div class=idx-welcome>
                     <span>
-                        Musician &dash; Writer &dash; Coder
+                        {{ motd.date|date:"Y-m-d" }} MOTD
                     </span>
                 </div>
                 <div class=idx-motd>
                     <span>
-                        <!--
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        -->
-                        {{ motd.date|date:"Y-m-d" }} MOTD<br/>
                         {{ motd.message }}<br/>
                     </span>
                 </div>
                 <div class=idx-signature>
                     &dash;Juan Gutierrez
-                    <!--
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    -->
                 </div>
             </div>
         </div>
