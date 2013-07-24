@@ -4,7 +4,7 @@
 }
 
 .right_body .idx-boxes {
-    width:92%;
+    width:77%;
     padding-top:50px;
 }
 
@@ -56,4 +56,5 @@
 
 .idx-about-details {
     text-align:justify;
+    font-size:14px;
 }
