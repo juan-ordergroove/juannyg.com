@@ -1,15 +1,13 @@
 .left_body .idx-boxes {
-    padding:50px;
-    width:80%;
+    padding-top:50px;
+    width:90%;
+    padding-left:37px;
 }
 
 .right_body .idx-boxes {
     width:77%;
     padding-top:50px;
-}
-
-.idx-boxes {
-    margin:auto;
+    padding-left:20px;
 }
 
 .idx-tbox {
