@@ -41,6 +41,20 @@
     font-size:18px;
 }
 
+.idx-more-blogs {
+    padding:5px 140px;
+    margin:10px;
+    background-color: #B1BFF1;
+    border-radius:3px;
+    font-style:italic;
+    font-size:13px;
+    cursor:pointer;
+}
+
+.idx-page-boxes {
+    text-align:center;
+}
+
 .idx-signature {
     font-style:italic;
     font-size:18px;

@@ -1,0 +1,13 @@
+{% extends "global/base.html" %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static "blog/css/index.css" %}" />
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{% static "blog/js/index.js" %}" ></script>
+{% endblock %}
+
+{% block left %}{% include "blog/left.html" %}{% endblock %}
+{% block right %}{% include "blog/right.html" %}{% endblock %}

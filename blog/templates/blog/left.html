@@ -1,0 +1,27 @@
+{% for blog in blogs %}
+    <div class=idx-boxes>
+        <div class=idx-tbox>
+            <div class=idx-txt-box>
+                <div class=idx-welcome>
+                    <span>
+                        {{ blog.title }}
+                    </span>
+                </div>
+                <div class=idx-motd>
+                    <span>
+                        {% autoescape off %}{{ blog.article }}{% endautoescape %}
+                    </span>
+                </div>
+                <div class=idx-signature>
+                    {{ blog.created|date:"F d, Y" }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+{% if blogs.has_next %}
+    <div  class="idx-boxes idx-page-boxes" id="idx-page-box">
+        <span data-evt="blogs_npage" data-param="{{ blogs.next_page_number }}" class=idx-more-blogs>See older posts...</span>
+    </div>
+{% endif %}

@@ -19,6 +19,8 @@
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="{% static "global/js/vendor/html5shiv.js" %}"><\/script>')</script>
         <![endif]-->
+        <script type='text/javascript' src="{% static "global/js/core.js" %}"></script>
+        {% block js %}{% endblock %}
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -30,10 +32,10 @@
             {% endblock %}
        
             <div class=body>
-                <div class=left_body>
+                <div class=left_body id=left_body>
                     {% block left %}{% endblock %}
                 </div>
-                <div class=right_body>
+                <div class=right_body id=right_body>
                     {% block right %}{% endblock %}
                 </div>
                 <div class=clear></div>
