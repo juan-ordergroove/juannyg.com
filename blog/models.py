@@ -4,7 +4,7 @@ from django.db import models
 from mongoengine import *
 from datetime import *
 
-YEARS = [ n for n in range(2013, datetime.now().year + 1) ]
+YEARS = [ n for n in xrange(2012, datetime.now().year + 1) ]
 MONTHS = tuple((i, calendar.month_name[i]) for i in xrange(1,13))
 
 class Blog(Document):

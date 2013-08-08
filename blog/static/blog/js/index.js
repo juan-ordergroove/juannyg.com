@@ -21,6 +21,9 @@
 
     function blogs_npage(args) {
         var url = '/blog/page/'+args.page;
+        var pathname = window.location.pathname;
+        if (pathname !== '/') { url = pathname+'/page/'+args.page }
+        
         var req = {
             'url': url,
             'success': blogs_render,
@@ -31,9 +34,9 @@
 
     function toggle_year(args) {
         var div = doc.getElementById('archive-'+args.year);
-        var div_height = div.style.height;
-        var collapsed = (!div_height || div_height === '0px') 
-        if (collapsed) { div.style.height = '25px'; }
-        else { div.style.height = '0px'; }
+        var max_height = div.style.maxHeight;
+        var collapsed = (!max_height || max_height === '0px')
+        if (collapsed) { div.style.maxHeight = '200px'; }
+        else { div.style.maxHeight = '0px'; }
     }
 }(document));

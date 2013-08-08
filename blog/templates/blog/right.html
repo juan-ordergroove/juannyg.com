@@ -24,8 +24,9 @@
                         <div class=archive-year data-evt=toggle_year data-param='{"year": "{{ year }}"}'>
                             {{ year }}
                             <div id=archive-{{ year }} class=archive-month-container>
-                            {% for month,m_c in months.months.items %}
-                                <div class=archive-month data-evt=month_select data-param='{"year": "{{ year }}", "month": "{{ month }}"}'>&dash; {{ month }} ({{ m_c }})</div>
+                            {% for month,m_c in months.months.items %}<div>
+                                <a class=archive-month href="/blog/{{ year }}/{{ month.0 }}">
+                                    &dash; {{ month.1 }} ({{ m_c }})</a></div>
                             {% endfor %}
                             </div>
                         </div>

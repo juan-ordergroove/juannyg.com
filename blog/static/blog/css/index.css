@@ -89,10 +89,10 @@
 }
 
 .archive-month-container {
-    height: 0;
+    max-height: 0;
     overflow:hidden;
-    transition: height 1s;
-    -webkit-transition: height 1s;
+    transition: max-height 1s;
+    -webkit-transition: max-height 1s;
 }
 
 .archive-month {
