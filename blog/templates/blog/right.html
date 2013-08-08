@@ -13,3 +13,25 @@
             </div>
         </div>
     </div>
+
+
+    <div class=idx-boxes>
+        <div class=idx-tbox>
+            <div class=idx-txt-box>
+                <div id=blog-archives>
+                    <div class=archive-label>Archives</div>
+                    <div>{% for year,months in archives.items %}
+                        <div class=archive-year data-evt=toggle_year data-param='{"year": "{{ year }}"}'>
+                            {{ year }}
+                            <div id=archive-{{ year }} class=archive-month-container>
+                            {% for month,m_c in months.months.items %}
+                                <div class=archive-month data-evt=month_select data-param='{"year": "{{ year }}", "month": "{{ month }}"}'>&dash; {{ month }} ({{ m_c }})</div>
+                            {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

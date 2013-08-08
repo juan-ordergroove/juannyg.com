@@ -26,6 +26,8 @@ if (typeof jg === 'undefined') { jg = {'events': {}}; }
     jg.dispatch = function(e) {
         var data_evt = e.target.getAttribute('data-evt');
         var data_p = e.target.getAttribute('data-param');
+        try { data_p = JSON.parse(data_p); }
+        catch(err) { data_p = {}; console.log(err); }
         if (jg.events[data_evt]) { jg.events[data_evt](data_p); }
     };
     window.addEventListener('click', jg.dispatch);

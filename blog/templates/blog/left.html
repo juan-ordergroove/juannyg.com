@@ -22,6 +22,6 @@
 
 {% if blogs.has_next %}
     <div  class="idx-boxes idx-page-boxes" id="idx-page-box">
-        <span data-evt="blogs_npage" data-param="{{ blogs.next_page_number }}" class=idx-more-blogs>See older posts...</span>
+        <span data-evt="blogs_npage" data-param='{"page": "{{ blogs.next_page_number }}"}' class=idx-more-blogs>See older posts...</span>
     </div>
 {% endif %}

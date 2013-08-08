@@ -12,6 +12,22 @@ def _page_blogs(page):
     except: blogs = paginator.page(1)
     return blogs
 
+def _archive_generator():
+    from blog.models import YEARS
+    from blog.models import MONTHS
+    archives = {}
+    for y in YEARS:
+        y_c = Blog.objects.filter(year=y).count()
+        if y_c:
+            archives[y] = {'months': {}}
+            for m in MONTHS:
+                m_c = Blog.objects.filter(year=y, month=m[0]).count()
+                if m_c: archives[y]['months'][m[1]] = m_c
+    return archives
+
+def blog_archive(request, year, month):
+    return HttpResponse('hi')
+
 def blog_page(request, page):
     template = loader.get_template('blog/left.html')
     context = Context({"blogs": _page_blogs(page)})
@@ -19,6 +35,7 @@ def blog_page(request, page):
 
 def index(request):
     blogs = _page_blogs(1)
+    archives = _archive_generator()
     template = loader.get_template('blog/index.html')
-    context = Context({"blogs": blogs})
+    context = Context({"blogs": blogs, 'archives': archives})
     return HttpResponse(template.render(context))

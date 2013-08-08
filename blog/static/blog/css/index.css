@@ -51,6 +51,11 @@
     cursor:pointer;
 }
 
+.blog-archives ul {
+    padding:0;
+    margin:0;
+}
+
 .idx-page-boxes {
     text-align:center;
 }
@@ -69,4 +74,27 @@
 .idx-about-details {
     text-align:justify;
     font-size:14px;
+}
+
+#blog-archives {
+    font-style:italic;
+}
+
+.archive-label {
+    text-align:center;
+}
+
+.archive-year {
+    cursor:pointer;
+}
+
+.archive-month-container {
+    height: 0;
+    overflow:hidden;
+    transition: height 1s;
+    -webkit-transition: height 1s;
+}
+
+.archive-month {
+    padding-left:10px;
 }
