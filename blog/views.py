@@ -1,5 +1,5 @@
 # Create your views here.
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.core.paginator import Paginator
 from django.template import Context, loader
 
@@ -30,13 +30,10 @@ def blog_archive(request, **kwargs):
     return HttpResponse(template.render(context))
 
 def blog_page(request, page, **kwargs):
+    blogs = _page_blogs(page, **kwargs)
     template = loader.get_template('blog/left.html')
-    context = Context({"blogs": _page_blogs(page, **kwargs)})
+    context = Context({"blogs": blogs })
     return HttpResponse(template.render(context))
 
 def index(request):
-    blogs = _page_blogs(1)
-    archives = _archive_generator()
-    template = loader.get_template('blog/index.html')
-    context = Context({"blogs": blogs, 'archives': archives})
-    return HttpResponse(template.render(context))
+    return HttpResponseRedirect('/blog')
