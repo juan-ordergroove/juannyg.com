@@ -10,4 +10,8 @@
 {% endblock %}
 
 {% block left %}{% include "blog/left.html" %}{% endblock %}
-{% block right %}{% include "blog/right.html" %}{% endblock %}
+
+{% block right %}
+    {% include "blog/about_me.html" %}
+    {% include "blog/archives.html" %}
+{% endblock %}

@@ -1,23 +1,5 @@
 {% for blog in blogs %}
-    <div class=idx-boxes>
-        <div class=idx-tbox>
-            <div class=idx-txt-box>
-                <div class=idx-welcome>
-                    <a href="/blog/{{ blog.id }}">
-                        {{ blog.title }}
-                    </a>
-                </div>
-                <div class=idx-motd>
-                    <span>
-                        {% autoescape off %}{{ blog.article }}{% endautoescape %}
-                    </span>
-                </div>
-                <div class=idx-signature>
-                    {{ blog.created|date:"F d, Y" }}
-                </div>
-            </div>
-        </div>
-    </div>
+    {% include "blog/blog.html" %}
 {% endfor %}
 
 {% if blogs.has_next %}

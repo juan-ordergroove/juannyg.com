@@ -1,8 +1,7 @@
 from django.conf.urls.defaults import *
 
-from blog.views import index
-from blog.views import blog_page
-from blog.views import blog_archive
+from blog.views import index, blog_page, blog_archive
+from me.views import index as me_index
 
 urlpatterns = patterns('',
   (r'^$', index),

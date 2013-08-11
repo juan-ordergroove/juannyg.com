@@ -1,38 +1,8 @@
-.left_body .idx-boxes {
-    padding-top:50px;
-    width:90%;
-    padding-left:37px;
-}
-
-.right_body .idx-boxes {
-    width:77%;
-    padding-top:50px;
-    padding-left:20px;
-}
-
-.idx-tbox {
-    padding: 0px 0px 15px 0px;
-    border-radius: 10px;
-    background-color: #B1BFF1;
-    font-size:15px;
-    min-height:160px;
-}
-
-.right_body .idx-tbox{
-    min-height:0;
-}
-
 .idx-welcome {
     text-align:center;
     font-size:24px;
     font-weight:bold;
     padding-top:10px;
-}
-
-.idx-txt-box {
-    padding-left:15px;
-    padding-top:10px;
-    padding-right:15px;
 }
 
 .idx-motd {
