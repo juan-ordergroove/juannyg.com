@@ -1,0 +1,12 @@
+#left_body {
+    float:none;
+    margin:auto;
+}
+
+#right-body {
+    display:none;
+}
+
+.about-bubble {
+    padding:15px;
+}

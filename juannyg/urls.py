@@ -9,8 +9,9 @@ from mongoadmin import site
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'juannyg.views.home', name='home'),
+    url(r'', include('programming.urls')),
     url(r'', include('blog.urls')),
-    url(r'', include('me.urls')),
+    url(r'', include('about.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

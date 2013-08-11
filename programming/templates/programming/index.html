@@ -1,0 +1,10 @@
+{% extends "global/base.html" %}
+{% load staticfiles %}
+
+{% block css %}
+<link rel ="stylesheet" href="{% static "programming/css/programming.css" %}" />
+{% endblock %}
+
+{% block left %}
+    {% include "programming/programming.html" %}
+{% endblock %}

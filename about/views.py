@@ -2,5 +2,5 @@ from django.http import HttpResponse
 from django.template import Context, loader
 
 def index(request):
-    template = loader.get_template('me/index.html')
+    template = loader.get_template('about/index.html')
     return HttpResponse(template.render(Context()))

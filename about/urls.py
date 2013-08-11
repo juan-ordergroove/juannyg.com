@@ -1,7 +1,7 @@
 from django.conf.urls.defaults import *
 
-from me.views import index 
+from about.views import index
 
 urlpatterns = patterns('',
-  (r'^me$', index),
+  (r'^about$', index),
 )
