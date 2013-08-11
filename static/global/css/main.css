@@ -125,7 +125,9 @@ textarea {
 .clear { clear:both; }
 .center { text-align:center; }
 
-
+a {
+   color:black; 
+}
 
 
 
